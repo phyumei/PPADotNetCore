@@ -13,6 +13,7 @@ namespace PPADotNetCore.ConsoleApp
         private readonly string _connectionString = "Data Source = .; Initial Catalog= DotNetTrainingBatch5; User ID= sa; Password=sasa@123;";
         public void Read()
         {
+            Console.WriteLine("Connection string: " + _connectionString);
             SqlConnection connection = new SqlConnection(_connectionString);
 
             Console.WriteLine("Connection opening...");
@@ -63,9 +64,9 @@ FROM [dbo].[Tbl_Blog] where DeleteFlag = 0";
            ,[BlogContent]
            ,[DeleteFlag])
      VALUES
-           (@BlogTitle,
-           ,@BlogAuthor,
-           ,@BlogContent,
+           (@BlogTitle
+           ,@BlogAuthor
+           ,@BlogContent
            ,0)";
 
             SqlCommand cmd = new SqlCommand(query, connection);

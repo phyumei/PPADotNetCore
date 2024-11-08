@@ -16,12 +16,15 @@ using System.Data.SqlClient;
 
 //Console.ReadKey();
 
-AdoDotNetPPA adoDotNetPPA = new AdoDotNetPPA();
+//AdoDotNetPPA adoDotNetPPA = new AdoDotNetPPA();
 //adoDotNetPPA.Read();
 //adoDotNetPPA.Create();
-adoDotNetPPA.Edit();
+//adoDotNetPPA.Edit();
 //adoDotNetPPA.Update();
 //adoDotNetPPA.Delete();
 
+DapperExample dapperExample = new DapperExample();
+//dapperExample.Read();
+dapperExample.Create("PPP", "Phyu", "PPPPPPPPPPP");
 
 Console.ReadKey();
